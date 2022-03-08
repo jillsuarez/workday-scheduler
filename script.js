@@ -48,11 +48,11 @@ var saveEvents = function() {
 $(".saveBtn").click(function(){
     console.log("I've been clicked")
     var eventText = $(".description").val();
-    var eventHour = $(".hour").val();
+    // var eventHour = $(".hour").val();&& eventHour
    
-    if (eventText && eventHour) {
+    if (eventText) {
         console.log("if activated")
-        createEvent(eventText, eventHour, "toDo");
+        createEvent(eventText, "toDo");
     
         // save in tasks array
         events.toDo.push({
